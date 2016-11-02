@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.0.1)
+  - DrawerController (3.0.0):
+    - DrawerController/Core (= 3.0.0)
+    - DrawerController/DrawerVisualStates (= 3.0.0)
+  - DrawerController/Core (3.0.0)
+  - DrawerController/DrawerVisualStates (3.0.0):
+    - DrawerController/Core
+  - ObjectMapper (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.1)
+  - DrawerController (~> 3.0.0)
+  - ObjectMapper (~> 2.2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  DrawerController: 5e859c5dbeae3cea20981eb5ff2aa16eb946dff9
+  ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+
+PODFILE CHECKSUM: a144099577e63cf0980916485184d29c9c7c2092
+
+COCOAPODS: 1.1.1
