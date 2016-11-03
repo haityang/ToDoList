@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41969B31DC9DDA500160286 /* TLLeftBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41969B11DC9DDA500160286 /* TLLeftBoardVC.swift */; };
-		B41969B41DC9DDA500160286 /* TLLeftBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41969B21DC9DDA500160286 /* TLLeftBoardVC.xib */; };
 		B41969B71DC9DE8600160286 /* TLLeftTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41969B51DC9DE8600160286 /* TLLeftTitleCell.swift */; };
 		B41969B81DC9DE8600160286 /* TLLeftTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41969B61DC9DE8600160286 /* TLLeftTitleCell.xib */; };
 		B41969FF1DC9E68D00160286 /* TLeftTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41969FE1DC9E68D00160286 /* TLeftTitle.swift */; };
@@ -236,6 +234,8 @@
 		B4CEA4971C819F3F0098FF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CEA4951C819F3F0098FF6E /* LaunchScreen.storyboard */; };
 		B4CF3CE61DBF514700E52BED /* TLHomeListSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF3CE51DBF514700E52BED /* TLHomeListSender.swift */; };
 		B4CF3CE81DBF519D00E52BED /* TLHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF3CE71DBF519D00E52BED /* TLHttpService.swift */; };
+		B4E0C6EF1DCB56C40083ADA4 /* TLeftTitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0C6ED1DCB56C40083ADA4 /* TLeftTitleVC.swift */; };
+		B4E0C6F01DCB56C40083ADA4 /* TLeftTitleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E0C6EE1DCB56C40083ADA4 /* TLeftTitleVC.xib */; };
 		F67B0BAC5B35E308942FED22 /* Pods_todolist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B11F599EF6CD57910147F65 /* Pods_todolist.framework */; };
 /* End PBXBuildFile section */
 
@@ -244,8 +244,6 @@
 		6B11F599EF6CD57910147F65 /* Pods_todolist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todolist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4F5021146D8AE73792E23D /* Pods-todolist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todolist/Pods-todolist.debug.xcconfig"; sourceTree = "<group>"; };
 		A376888C6F3461E84E3F60FE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41969B11DC9DDA500160286 /* TLLeftBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLLeftBoardVC.swift; sourceTree = "<group>"; };
-		B41969B21DC9DDA500160286 /* TLLeftBoardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLLeftBoardVC.xib; sourceTree = "<group>"; };
 		B41969B51DC9DE8600160286 /* TLLeftTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLLeftTitleCell.swift; sourceTree = "<group>"; };
 		B41969B61DC9DE8600160286 /* TLLeftTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLLeftTitleCell.xib; sourceTree = "<group>"; };
 		B41969FE1DC9E68D00160286 /* TLeftTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLeftTitle.swift; sourceTree = "<group>"; };
@@ -475,6 +473,8 @@
 		B4CEA4981C819F3F0098FF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4CF3CE51DBF514700E52BED /* TLHomeListSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLHomeListSender.swift; sourceTree = "<group>"; };
 		B4CF3CE71DBF519D00E52BED /* TLHttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLHttpService.swift; sourceTree = "<group>"; };
+		B4E0C6ED1DCB56C40083ADA4 /* TLeftTitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLeftTitleVC.swift; sourceTree = "<group>"; };
+		B4E0C6EE1DCB56C40083ADA4 /* TLeftTitleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLeftTitleVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,10 +510,10 @@
 		B41969AE1DC9DC7E00160286 /* LeftBoard */ = {
 			isa = PBXGroup;
 			children = (
-				B41969B11DC9DDA500160286 /* TLLeftBoardVC.swift */,
-				B41969B21DC9DDA500160286 /* TLLeftBoardVC.xib */,
 				B41969B51DC9DE8600160286 /* TLLeftTitleCell.swift */,
 				B41969B61DC9DE8600160286 /* TLLeftTitleCell.xib */,
+				B4E0C6ED1DCB56C40083ADA4 /* TLeftTitleVC.swift */,
+				B4E0C6EE1DCB56C40083ADA4 /* TLeftTitleVC.xib */,
 			);
 			path = LeftBoard;
 			sourceTree = "<group>";
@@ -1016,7 +1016,6 @@
 				B47A7DBD1DCA17A80044B09B /* mobile-icon-store-white@2x.png in Resources */,
 				B4CEA4971C819F3F0098FF6E /* LaunchScreen.storyboard in Resources */,
 				B47A7DD31DCA17A80044B09B /* mobile-icon-toolbar-facebook-white@2x.png in Resources */,
-				B41969B41DC9DDA500160286 /* TLLeftBoardVC.xib in Resources */,
 				B47A7E391DCA17A80044B09B /* mobile-rating-6out10@2x.png in Resources */,
 				B47A7E511DCA17A80044B09B /* mobile-selector-tag-white@2x.png in Resources */,
 				B47A7DB11DCA17A80044B09B /* mobile-icon-refresh-white@2x.png in Resources */,
@@ -1103,6 +1102,7 @@
 				B47A7E531DCA17A80044B09B /* mobile-visual-explore-white@2x.png in Resources */,
 				B47A7DB01DCA17A80044B09B /* mobile-icon-refresh-black@2x.png in Resources */,
 				B47A7DF81DCA17A80044B09B /* mobile-icon-toolbar-reader-black@2x.png in Resources */,
+				B4E0C6F01DCB56C40083ADA4 /* TLeftTitleVC.xib in Resources */,
 				B47A7DEE1DCA17A80044B09B /* mobile-icon-toolbar-overflow-black@2x.png in Resources */,
 				B47A7DFB1DCA17A80044B09B /* mobile-icon-toolbar-safari-white@2x.png in Resources */,
 				B47A7DC61DCA17A80044B09B /* mobile-icon-toolbar-chrome-black@2x.png in Resources */,
@@ -1208,7 +1208,7 @@
 				B41969FF1DC9E68D00160286 /* TLeftTitle.swift in Sources */,
 				B4C8FD4B1C9459C300F077F8 /* TListMsgCell.swift in Sources */,
 				B4CF3CE61DBF514700E52BED /* TLHomeListSender.swift in Sources */,
-				B41969B31DC9DDA500160286 /* TLLeftBoardVC.swift in Sources */,
+				B4E0C6EF1DCB56C40083ADA4 /* TLeftTitleVC.swift in Sources */,
 				B4CF3CE81DBF519D00E52BED /* TLHttpService.swift in Sources */,
 				B4C8FD4F1C9459F400F077F8 /* TListMsgController.swift in Sources */,
 				B41969B71DC9DE8600160286 /* TLLeftTitleCell.swift in Sources */,

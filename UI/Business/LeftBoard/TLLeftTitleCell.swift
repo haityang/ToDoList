@@ -25,10 +25,10 @@ class TLLeftTitleCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(cell:TLLeftTitleCell?, item:TLeftTitleItem) ->Int {
-        if (cell != nil) {
-            cell!.iconSymbol.image = UIImage(named: item.imageURL!)
-            cell!.lbTitle.text = item.title
+    class func setupCell(cell:TLLeftTitleCell?, item:TLeftTitleItem?) ->Int {
+        if (cell != nil && item != nil) {
+            cell!.iconSymbol.image = UIImage(named: item!.imageURL!)
+            cell!.lbTitle.text = item!.title
             return 0
             
         }else {

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
-        let leftSideDrawerViewController = TNewMsgController()
+        let leftSideDrawerViewController = TLeftTitleVC()
         let centerViewController = TListMsgController(nibName:"TListMsgController", bundle: nil)
 //        let rightSideDrawerViewController = TNewMsgController()
         
