@@ -21,6 +21,7 @@ class TListMsgController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
         self.setupRightMenuButton()
+        self.navigationItem.title = "有计划，就从容"
         
         let nib = UINib(nibName: "TListMsgCell", bundle: nil)
         tableMsg.register(nib, forCellReuseIdentifier: idListMsgCell)
@@ -40,6 +41,10 @@ class TListMsgController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
     
     /*
     // MARK: - Navigation
@@ -52,12 +57,18 @@ class TListMsgController: UIViewController, UITableViewDataSource, UITableViewDe
     */
 
     func setupLeftMenuButton() {
-        let leftDrawerButton = DrawerBarButtonItem(target: self, action: #selector(TListMsgController.leftDrawerButtonPress(_:)))
+//        let leftDrawerButton = DrawerBarButtonItem(target: self, action: #selector(TListMsgController.leftDrawerButtonPress(_:)))
+        
+        let image = UIImage(named: "mobile-icon-home-black")
+        let leftDrawerButton = UIBarButtonItem(image:image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(TListMsgController.leftDrawerButtonPress(_:)))
         self.navigationItem.setLeftBarButton(leftDrawerButton, animated: true)
     }
     
     func setupRightMenuButton() {
-        let rightDrawerButton = DrawerBarButtonItem(target: self, action: #selector(TListMsgController.rightDrawerButtonPress(_:)))
+//        let rightDrawerButton = DrawerBarButtonItem(target: self, action: #selector(TListMsgController.rightDrawerButtonPress(_:)))
+
+        let image = UIImage(named: "mobile-icon-follow-black")
+        let rightDrawerButton = UIBarButtonItem(image:image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(TListMsgController.rightDrawerButtonPress(_:)))
         self.navigationItem.setRightBarButton(rightDrawerButton, animated: true)
     }
 

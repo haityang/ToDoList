@@ -19,9 +19,11 @@ class TLeftTitleVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         // Do any additional setup after loading the view.
         leftTitle = TLeftTitle()
         
-        let nib = UINib(nibName: "TLLeftTitleCell", bundle: nil)
+        var nib = UINib(nibName: "TLLeftTitleCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TLLeftTitleCell")
         
+        nib = UINib(nibName: "TLAccountCell", bundle:nil)
+        tableView.register(nib, forCellReuseIdentifier: "TLAccountCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,17 +42,28 @@ class TLeftTitleVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (leftTitle?.titles?.count)!
+        return ((leftTitle?.titles?.count)! + 1)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: TLLeftTitleCell? = tableView.dequeueReusableCell(withIdentifier:  "TLLeftTitleCell") as! TLLeftTitleCell?
-        
-        let item = leftTitle?.titles?[indexPath.row]
-        TLLeftTitleCell.setupCell(cell: cell, item: item)
-        return cell!
+        if indexPath.row == 0 {
+            let cell: TLAccountCell? = tableView.dequeueReusableCell(withIdentifier:  "TLAccountCell") as! TLAccountCell?
+            return cell!
+            
+        }else {
+            let cell: TLLeftTitleCell? = tableView.dequeueReusableCell(withIdentifier:  "TLLeftTitleCell") as! TLLeftTitleCell?
+            
+            let item = leftTitle?.titles?[indexPath.row - 1]
+            TLLeftTitleCell.setupCell(cell: cell, item: item)
+            return cell!
+        }
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 142
+        }else {
+            return 42
+        }
+    }
 }

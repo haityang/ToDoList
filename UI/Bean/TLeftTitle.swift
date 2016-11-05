@@ -26,17 +26,17 @@ open class TLeftTitle {
         var arr = [TLeftTitleItem]()
     
         var item: TLeftTitleItem = TLeftTitleItem()
-        item.imageURL = "mobile-selector-feedly-white"
+        item.imageURL = "mobile-selector-etag-white"
         item.title = "全部"
         arr.append(item)
         
         item = TLeftTitleItem()
-        item.imageURL = "mobile-selector-feedly-white"
+        item.imageURL = "mobile-selector-explore-white"
         item.title = "紧急重要"
         arr.append(item)
         
         item = TLeftTitleItem()
-        item.imageURL = "mobile-selector-feedly-white"
+        item.imageURL = "mobile-selector-favorite-white"
         item.title = "紧急不重要"
         arr.append(item)
         
@@ -46,7 +46,7 @@ open class TLeftTitle {
         arr.append(item)
         
         item = TLeftTitleItem()
-        item.imageURL = "mobile-selector-feedly-white"
+        item.imageURL = "mobile-selector-saved-white"
         item.title = "不重要不紧急"
         arr.append(item)
         

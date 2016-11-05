@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TListMsgCell" customModule="todolist" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="TListMsgCell" customModule="todolist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-Ll-5Nt">
-                        <color key="backgroundColor" red="1" green="0.49019607840000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile-icon-toolbar-safari-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="wZc-XR-IbU">
+                        <rect key="frame" x="8" y="8" width="30" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="CHG-VA-JPn"/>
-                            <constraint firstAttribute="width" constant="20" id="yWL-zG-ub6"/>
+                            <constraint firstAttribute="width" constant="30" id="coL-fe-fan"/>
+                            <constraint firstAttribute="height" constant="30" id="hsK-SD-BXe"/>
                         </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We7-TK-E3u">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去订购一辆宝马并陪冰冰吃顿饭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYf-DT-HbW">
+                        <rect key="frame" x="40" y="14.5" width="222" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-df-M06">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="星期三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-df-M06">
+                        <rect key="frame" x="272" y="16" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="紧急不重要" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We7-TK-E3u">
+                        <rect key="frame" x="40" y="38.5" width="66.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYf-DT-HbW">
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新近我们极少在外头吃饭，每天晚上都赶回来和冰冰共进晚餐，以规律的生活改进冰冰的生活习惯。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="wCD-Or-dfM">
+                        <rect key="frame" x="40" y="60.5" width="272" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="wCD-Or-dfM" firstAttribute="leading" secondItem="We7-TK-E3u" secondAttribute="leading" id="0cU-cB-G7I"/>
+                    <constraint firstItem="vYf-DT-HbW" firstAttribute="centerY" secondItem="wZc-XR-IbU" secondAttribute="centerY" id="24w-vH-HX8"/>
                     <constraint firstItem="We7-TK-E3u" firstAttribute="leading" secondItem="vYf-DT-HbW" secondAttribute="leading" id="FD0-ao-aMt"/>
-                    <constraint firstItem="gEd-Ll-5Nt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="GiQ-8W-Ajf"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="AUp-df-M06" secondAttribute="trailing" constant="10" id="Y56-je-4Hd"/>
-                    <constraint firstItem="vYf-DT-HbW" firstAttribute="centerY" secondItem="gEd-Ll-5Nt" secondAttribute="centerY" id="ZX8-1A-agL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wCD-Or-dfM" secondAttribute="trailing" id="Fz4-nY-oCU"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="wZc-XR-IbU" secondAttribute="leading" id="NZ3-oX-nOE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AUp-df-M06" secondAttribute="trailing" id="Y56-je-4Hd"/>
+                    <constraint firstItem="vYf-DT-HbW" firstAttribute="leading" secondItem="wZc-XR-IbU" secondAttribute="trailing" constant="2" id="YUf-NV-qq3"/>
+                    <constraint firstItem="wCD-Or-dfM" firstAttribute="top" secondItem="We7-TK-E3u" secondAttribute="bottom" constant="6" id="Z7d-CJ-Mg7"/>
+                    <constraint firstItem="AUp-df-M06" firstAttribute="leading" secondItem="vYf-DT-HbW" secondAttribute="trailing" constant="10" id="aEg-ah-KIb"/>
+                    <constraint firstAttribute="topMargin" secondItem="wZc-XR-IbU" secondAttribute="top" id="iTq-H0-7E9"/>
                     <constraint firstItem="AUp-df-M06" firstAttribute="centerY" secondItem="vYf-DT-HbW" secondAttribute="centerY" id="pCC-ga-jkA"/>
-                    <constraint firstItem="We7-TK-E3u" firstAttribute="top" secondItem="vYf-DT-HbW" secondAttribute="bottom" constant="4" id="tL7-zs-g0K"/>
-                    <constraint firstItem="vYf-DT-HbW" firstAttribute="leading" secondItem="gEd-Ll-5Nt" secondAttribute="trailing" constant="8" id="z2d-hJ-WV5"/>
-                    <constraint firstItem="gEd-Ll-5Nt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="zQA-qW-16O"/>
+                    <constraint firstItem="We7-TK-E3u" firstAttribute="top" secondItem="vYf-DT-HbW" secondAttribute="bottom" constant="6" id="tL7-zs-g0K"/>
                 </constraints>
             </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="74.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="mobile-icon-toolbar-safari-white.png" width="30" height="30"/>
+    </resources>
 </document>

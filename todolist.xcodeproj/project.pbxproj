@@ -12,6 +12,10 @@
 		B41969FF1DC9E68D00160286 /* TLeftTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41969FE1DC9E68D00160286 /* TLeftTitle.swift */; };
 		B45DC7F01C86CE1B00AE1087 /* TMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45DC7EF1C86CE1B00AE1087 /* TMessage.swift */; };
 		B45DC7F61C86D34400AE1087 /* TNewMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45DC7F51C86D34400AE1087 /* TNewMsgController.swift */; };
+		B47A3BA91DCE0340006DEA7A /* TLAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A3BA71DCE0340006DEA7A /* TLAccountCell.swift */; };
+		B47A3BAA1DCE0340006DEA7A /* TLAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47A3BA81DCE0340006DEA7A /* TLAccountCell.xib */; };
+		B47A3BAD1DCE19A9006DEA7A /* bg_mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A3BAB1DCE19A9006DEA7A /* bg_mountains.png */; };
+		B47A3BAE1DCE19A9006DEA7A /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A3BAC1DCE19A9006DEA7A /* header.png */; };
 		B47A7D821DCA17A80044B09B /* mobile-action-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7CAC1DCA17A80044B09B /* mobile-action-list@2x.png */; };
 		B47A7D831DCA17A80044B09B /* mobile-action-magazine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7CAD1DCA17A80044B09B /* mobile-action-magazine@2x.png */; };
 		B47A7D841DCA17A80044B09B /* mobile-action-mark-as-favorite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7CAE1DCA17A80044B09B /* mobile-action-mark-as-favorite@2x.png */; };
@@ -249,6 +253,10 @@
 		B41969FE1DC9E68D00160286 /* TLeftTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLeftTitle.swift; sourceTree = "<group>"; };
 		B45DC7EF1C86CE1B00AE1087 /* TMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMessage.swift; sourceTree = "<group>"; };
 		B45DC7F51C86D34400AE1087 /* TNewMsgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TNewMsgController.swift; sourceTree = "<group>"; };
+		B47A3BA71DCE0340006DEA7A /* TLAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLAccountCell.swift; sourceTree = "<group>"; };
+		B47A3BA81DCE0340006DEA7A /* TLAccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLAccountCell.xib; sourceTree = "<group>"; };
+		B47A3BAB1DCE19A9006DEA7A /* bg_mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_mountains.png; sourceTree = "<group>"; };
+		B47A3BAC1DCE19A9006DEA7A /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		B47A7CAC1DCA17A80044B09B /* mobile-action-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-action-list@2x.png"; sourceTree = "<group>"; };
 		B47A7CAD1DCA17A80044B09B /* mobile-action-magazine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-action-magazine@2x.png"; sourceTree = "<group>"; };
 		B47A7CAE1DCA17A80044B09B /* mobile-action-mark-as-favorite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-action-mark-as-favorite@2x.png"; sourceTree = "<group>"; };
@@ -514,6 +522,8 @@
 				B41969B61DC9DE8600160286 /* TLLeftTitleCell.xib */,
 				B4E0C6ED1DCB56C40083ADA4 /* TLeftTitleVC.swift */,
 				B4E0C6EE1DCB56C40083ADA4 /* TLeftTitleVC.xib */,
+				B47A3BA71DCE0340006DEA7A /* TLAccountCell.swift */,
+				B47A3BA81DCE0340006DEA7A /* TLAccountCell.xib */,
 			);
 			path = LeftBoard;
 			sourceTree = "<group>";
@@ -521,6 +531,8 @@
 		B41969B91DC9E61500160286 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B47A3BAB1DCE19A9006DEA7A /* bg_mountains.png */,
+				B47A3BAC1DCE19A9006DEA7A /* header.png */,
 				B47A7CAC1DCA17A80044B09B /* mobile-action-list@2x.png */,
 				B47A7CAD1DCA17A80044B09B /* mobile-action-magazine@2x.png */,
 				B47A7CAE1DCA17A80044B09B /* mobile-action-mark-as-favorite@2x.png */,
@@ -1003,6 +1015,7 @@
 				B47A7D871DCA17A80044B09B /* mobile-action-oldest-first@2x.png in Resources */,
 				B47A7DC21DCA17A80044B09B /* mobile-icon-toolbar-back-white@2x.png in Resources */,
 				B47A7DE21DCA17A80044B09B /* mobile-icon-toolbar-kindle-black@2x.png in Resources */,
+				B47A3BAA1DCE0340006DEA7A /* TLAccountCell.xib in Resources */,
 				B47A7E001DCA17A80044B09B /* mobile-icon-toolbar-savetoknowledgeboard-black@2x.png in Resources */,
 				B47A7E0B1DCA17A80044B09B /* mobile-icon-toolbar-tag@2x.png in Resources */,
 				B47A7E491DCA17A80044B09B /* mobile-selector-feedly-white@2x.png in Resources */,
@@ -1029,6 +1042,7 @@
 				B47A7E4B1DCA17A80044B09B /* mobile-selector-latest-white@2x.png in Resources */,
 				B47A7E3C1DCA17A80044B09B /* mobile-rating-9out10@2x.png in Resources */,
 				B47A7D8D1DCA17A80044B09B /* mobile-action-visit@2x.png in Resources */,
+				B47A3BAE1DCE19A9006DEA7A /* header.png in Resources */,
 				B47A7D841DCA17A80044B09B /* mobile-action-mark-as-favorite@2x.png in Resources */,
 				B47A7D8C1DCA17A80044B09B /* mobile-action-unread@2x.png in Resources */,
 				B47A7E431DCA17A80044B09B /* mobile-selector-etag-white@2x.png in Resources */,
@@ -1058,6 +1072,7 @@
 				B47A7E0F1DCA17A80044B09B /* mobile-icon-toolbar-unread-black@2x.png in Resources */,
 				B47A7E1B1DCA17A80044B09B /* mobile-library-add-white@2x.png in Resources */,
 				B47A7DA21DCA17A80044B09B /* mobile-icon-evernote-business@2x.png in Resources */,
+				B47A3BAD1DCE19A9006DEA7A /* bg_mountains.png in Resources */,
 				B47A7E141DCA17A80044B09B /* mobile-icon-toolbar-url@2x.png in Resources */,
 				B47A7DAD1DCA17A80044B09B /* mobile-icon-markasread-white@2x.png in Resources */,
 				B47A7E3E1DCA17A80044B09B /* mobile-selector-down-arrow-black@2x.png in Resources */,
@@ -1205,6 +1220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47A3BA91DCE0340006DEA7A /* TLAccountCell.swift in Sources */,
 				B41969FF1DC9E68D00160286 /* TLeftTitle.swift in Sources */,
 				B4C8FD4B1C9459C300F077F8 /* TListMsgCell.swift in Sources */,
 				B4CF3CE61DBF514700E52BED /* TLHomeListSender.swift in Sources */,
