@@ -80,6 +80,7 @@ class TListMsgController: UIViewController, UITableViewDataSource, UITableViewDe
     func rightDrawerButtonPress(_ sender: AnyObject?) {
 //        self.evo_drawerController?.toggleDrawerSide(.right, animated: true, completion: nil)
         let newMsgVC: TLNewMsgVC = TLNewMsgVC()
-        self.present(newMsgVC, animated: true, completion: nil)
+        let navVC = UINavigationController(rootViewController:newMsgVC)
+        self.present(navVC, animated: true, completion: nil)
     }
 }

@@ -25,7 +25,7 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
         self.setupRightMenuButton()
-        self.navigationItem.title = "有计划，就从容"
+        self.navigationItem.title = "创建一项事件"
         
         cellTypes = [MsgNewItem.Title, MsgNewItem.Content, MsgNewItem.Kind]
         
@@ -78,17 +78,23 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     */
     func setupLeftMenuButton() {
-        
-        let image = UIImage(named: "mobile-icon-home-black")
-        let leftDrawerButton = UIBarButtonItem(image:image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(TListMsgController.leftDrawerButtonPress(_:)))
-        self.navigationItem.setLeftBarButton(leftDrawerButton, animated: true)
+        let leftButton = UIBarButtonItem(title:"取消", style:UIBarButtonItemStyle.plain, target:self, action:#selector(leftBtnPress(_:)))
+        self.navigationItem.setLeftBarButton(leftButton, animated: true)
     }
     
     func setupRightMenuButton() {
-        
-        let image = UIImage(named: "mobile-icon-follow-black")
-        let rightDrawerButton = UIBarButtonItem(image:image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(TListMsgController.rightDrawerButtonPress(_:)))
-        self.navigationItem.setRightBarButton(rightDrawerButton, animated: true)
+        let rightButton = UIBarButtonItem(title:"保存", style:UIBarButtonItemStyle.plain, target:self, action:#selector(rightBtnPress(_:)))
+        self.navigationItem.setRightBarButton(rightButton, animated: true)
     }
+    
+    func leftBtnPress(_ sender: AnyObject?) -> Void {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func rightBtnPress(_ sender:AnyObject?) -> Void {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 
 }
