@@ -50,8 +50,16 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if indexPath.row == 0 || indexPath.row == 1 {
+        if indexPath.row == 0 {
             let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
+            cell?.lbTitle.text = "标题"
+            cell?.lbContent.text = "为事件起个名字"
+            return cell!
+            
+        }else if indexPath.row == 1 {
+            let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
+            cell?.lbTitle.text = "内容"
+            cell?.lbContent.text = "写下你要做的事情"
             return cell!
             
         }else {
@@ -61,10 +69,13 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 || indexPath.row == 1 {
+        if indexPath.row == 0 {
+            return 44
+        }else if indexPath.row == 1 {
+            return 132
+        }else {
             return 44
         }
-        return 44
     }
     
     

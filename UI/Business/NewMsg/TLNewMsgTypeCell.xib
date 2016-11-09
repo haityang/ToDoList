@@ -19,15 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile-icon-toolbar-safari-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kmq-vM-HEn">
-                        <rect key="frame" x="0.0" y="7" width="30" height="30"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile-icon-toolbar-chrome-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kmq-vM-HEn">
+                        <rect key="frame" x="8" y="7" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="Btj-7g-iyr"/>
                             <constraint firstAttribute="height" constant="30" id="FtT-6C-7q8"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事件类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrP-2H-3Us">
-                        <rect key="frame" x="32" y="13.5" width="61.5" height="18"/>
+                        <rect key="frame" x="40" y="13.5" width="61.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Kmq-vM-HEn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="59I-oD-ytp"/>
+                    <constraint firstItem="Kmq-vM-HEn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="59I-oD-ytp"/>
                     <constraint firstItem="fqO-Ba-AOJ" firstAttribute="centerY" secondItem="zVf-vw-N3I" secondAttribute="centerY" id="EFg-AV-EXI"/>
                     <constraint firstItem="DrP-2H-3Us" firstAttribute="leading" secondItem="Kmq-vM-HEn" secondAttribute="trailing" constant="2" id="MrF-9N-rOB"/>
                     <constraint firstItem="zVf-vw-N3I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OJz-UY-lBx"/>
@@ -60,7 +60,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="mobile-icon-toolbar-chrome-white.png" width="30" height="30"/>
         <image name="mobile-icon-toolbar-next-white.png" width="30" height="30"/>
-        <image name="mobile-icon-toolbar-safari-black.png" width="30" height="30"/>
     </resources>
 </document>

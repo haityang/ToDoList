@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-8C-FoD">
-                        <rect key="frame" x="8" y="7" width="46" height="18"/>
+                        <rect key="frame" x="11" y="7" width="46" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="46" id="pwA-Ad-Gy7"/>
                         </constraints>
@@ -28,9 +28,10 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="写入一段话" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xJL-aI-WBX">
-                        <rect key="frame" x="64" y="0.0" width="248" height="60.5"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="写下你要做的事情" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xJL-aI-WBX">
+                        <rect key="frame" x="67" y="0.0" width="245" height="60.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
@@ -41,9 +42,13 @@
                     <constraint firstAttribute="trailingMargin" secondItem="xJL-aI-WBX" secondAttribute="trailing" id="cRi-9t-e5y"/>
                     <constraint firstItem="xJL-aI-WBX" firstAttribute="leading" secondItem="ll9-8C-FoD" secondAttribute="trailing" constant="10" id="gor-UZ-d5Y"/>
                     <constraint firstItem="ll9-8C-FoD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="gtq-St-wSe"/>
-                    <constraint firstItem="ll9-8C-FoD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zQa-3s-Cql"/>
+                    <constraint firstItem="ll9-8C-FoD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="zQa-3s-Cql"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="lbContent" destination="xJL-aI-WBX" id="iTp-0M-34T"/>
+                <outlet property="lbTitle" destination="ll9-8C-FoD" id="1zE-Zz-M8R"/>
+            </connections>
             <point key="canvasLocation" x="34" y="62.5"/>
         </tableViewCell>
     </objects>

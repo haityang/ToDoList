@@ -10,6 +10,10 @@ import UIKit
 
 class TLNewMsgCell: UITableViewCell {
 
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbContent: UITextView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
