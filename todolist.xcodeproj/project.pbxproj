@@ -236,6 +236,9 @@
 		B47A7E551DCA17A80044B09B /* mobile-visual-search-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D7F1DCA17A80044B09B /* mobile-visual-search-white@2x.png */; };
 		B47A7E561DCA17A80044B09B /* mobile-visual-search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D801DCA17A80044B09B /* mobile-visual-search@2x.png */; };
 		B47A7E571DCA17A80044B09B /* mobile-visual-youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D811DCA17A80044B09B /* mobile-visual-youtube@2x.png */; };
+		B4A318171DDB3F500087C01F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A318161DDB3F500087C01F /* libsqlite3.tbd */; };
+		B4A3181A1DDB40D20087C01F /* SQLiteConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A318191DDB40D20087C01F /* SQLiteConnect.swift */; };
+		B4A3181C1DDB41CF0087C01F /* SQLiteOper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3181B1DDB41CF0087C01F /* SQLiteOper.swift */; };
 		B4C8FD4B1C9459C300F077F8 /* TListMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C8FD491C9459C300F077F8 /* TListMsgCell.swift */; };
 		B4C8FD4C1C9459C300F077F8 /* TListMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C8FD4A1C9459C300F077F8 /* TListMsgCell.xib */; };
 		B4C8FD4F1C9459F400F077F8 /* TListMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C8FD4D1C9459F400F077F8 /* TListMsgController.swift */; };
@@ -484,6 +487,10 @@
 		B47A7D7F1DCA17A80044B09B /* mobile-visual-search-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-search-white@2x.png"; sourceTree = "<group>"; };
 		B47A7D801DCA17A80044B09B /* mobile-visual-search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-search@2x.png"; sourceTree = "<group>"; };
 		B47A7D811DCA17A80044B09B /* mobile-visual-youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-youtube@2x.png"; sourceTree = "<group>"; };
+		B4A318161DDB3F500087C01F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B4A318181DDB3F960087C01F /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		B4A318191DDB40D20087C01F /* SQLiteConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteConnect.swift; sourceTree = "<group>"; };
+		B4A3181B1DDB41CF0087C01F /* SQLiteOper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteOper.swift; sourceTree = "<group>"; };
 		B4C8FD491C9459C300F077F8 /* TListMsgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListMsgCell.swift; sourceTree = "<group>"; };
 		B4C8FD4A1C9459C300F077F8 /* TListMsgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TListMsgCell.xib; sourceTree = "<group>"; };
 		B4C8FD4D1C9459F400F077F8 /* TListMsgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListMsgController.swift; sourceTree = "<group>"; };
@@ -504,6 +511,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A318171DDB3F500087C01F /* libsqlite3.tbd in Frameworks */,
 				F67B0BAC5B35E308942FED22 /* Pods_todolist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 		66849A387F4AC96036353D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4A318161DDB3F500087C01F /* libsqlite3.tbd */,
 				A376888C6F3461E84E3F60FE /* Pods.framework */,
 				6B11F599EF6CD57910147F65 /* Pods_todolist.framework */,
 			);
@@ -824,6 +833,7 @@
 		B45DC7E61C86CCCF00AE1087 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B4A318181DDB3F960087C01F /* BridgeHeader.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -848,6 +858,8 @@
 		B45DC7E91C86CCCF00AE1087 /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				B4A318191DDB40D20087C01F /* SQLiteConnect.swift */,
+				B4A3181B1DDB41CF0087C01F /* SQLiteOper.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -1259,6 +1271,8 @@
 				B47A3BB61DCECA54006DEA7A /* TLNewMsgVC.swift in Sources */,
 				B41969B71DC9DE8600160286 /* TLLeftTitleCell.swift in Sources */,
 				B4CEA48D1C819F3E0098FF6E /* AppDelegate.swift in Sources */,
+				B4A3181A1DDB40D20087C01F /* SQLiteConnect.swift in Sources */,
+				B4A3181C1DDB41CF0087C01F /* SQLiteOper.swift in Sources */,
 				B45DC7F01C86CE1B00AE1087 /* TMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1372,7 +1386,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rice.Ricefun.todolist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = UI/Common/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1390,7 +1404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rice.Ricefun.todolist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = UI/Common/BridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

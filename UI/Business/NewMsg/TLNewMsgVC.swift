@@ -37,6 +37,9 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let op = SQLiteOper.shared;
+        op.sample()
     }
 
     override func didReceiveMemoryWarning() {
