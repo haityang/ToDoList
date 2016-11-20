@@ -25,7 +25,26 @@ class SQLiteConnect {
     
     // 連結資料庫 connect database
     func openDatabase(_ path :String) -> OpaquePointer? {
+        //document path
+        var paths:Array = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        let toPath = paths[0] + path
+        
+        //bundle path
+        let fromPath = Bundle.main.resourcePath! + path
+        
+        let fileManager = FileManager.default
+        if !fileManager.fileExists(atPath: toPath) {
+            if (try? fileManager.copyItem(atPath:fromPath, toPath:toPath)) != nil {
+                return nil
+            }
+        }
+        
+        //open database
         var connectdb: OpaquePointer? = nil
+        
+        sqlite3_shutdown()
+        sqlite3_initialize()
+        
         if sqlite3_open(path, &connectdb) == SQLITE_OK {
             print("Successfully opened database \(path)")
             return connectdb!
@@ -33,7 +52,9 @@ class SQLiteConnect {
             print("Unable to open database.")
             return nil
         }
+        
     }
+    
     
     // 建立資料表 create table
     func createTable(_ tableName :String, columnsInfo :[String]) -> Bool {
@@ -52,6 +73,7 @@ class SQLiteConnect {
     // 新增資料
     func insert(_ tableName :String, rowInfo :[String:String]) -> Bool {
         var statement :OpaquePointer? = nil
+        
         let sql = "insert into \(tableName) "
             + "(\(rowInfo.keys.joined(separator: ","))) "
             + "values (\(rowInfo.values.joined(separator: ",")))"

@@ -22,6 +22,7 @@ open class TMessage: Mappable {
     var title: String?
     var desc: String?
     var type = TMsgType.tmsgTypeUEUI
+    var expire: Double = 0
     
     required public init?(map: Map) {
         

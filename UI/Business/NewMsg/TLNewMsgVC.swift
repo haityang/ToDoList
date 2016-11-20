@@ -14,10 +14,14 @@ enum MsgNewItem {
     case Kind
 }
 
-class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, TLEventTypeProtocol {
 
     @IBOutlet weak var tableView: UITableView!
     var cellTypes: NSArray!
+    var eventType: TMsgType = TMsgType.tMsgTypeEI
+    var tfEventTitle: UITextField?
+    var tvEventContent: UITextView?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +43,7 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.delegate = self
         
         let op = SQLiteOper.shared;
-        op.sample()
+        //op.sample()
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,6 +85,13 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 2 {
+            let eventVC = TLEventTypeController()
+            self.navigationController?.pushViewController(eventVC, animated: true)
+        }
+    }
+    
     
     /*
     // MARK: - Navigation
@@ -110,5 +121,8 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
-
+    //delegate 
+    func didSelectType(type:TMsgType) {
+        eventType = type
+    }
 }
