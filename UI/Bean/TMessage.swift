@@ -28,6 +28,10 @@ open class TMessage: Mappable {
         
     }
     
+    public init() {
+    
+    }
+    
     public func mapping(map: Map) {
         title <- map["title"]
         desc <- map["desc"]

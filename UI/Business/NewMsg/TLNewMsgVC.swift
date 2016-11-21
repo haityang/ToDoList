@@ -19,7 +19,7 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     @IBOutlet weak var tableView: UITableView!
     var cellTypes: NSArray!
     var eventType: TMsgType = TMsgType.tMsgTypeEI
-    var tfEventTitle: UITextField?
+    var tvEventTitle: UITextView?
     var tvEventContent: UITextView?
     
     
@@ -42,7 +42,7 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         tableView.dataSource = self
         tableView.delegate = self
         
-        let op = SQLiteOper.shared;
+        //let op = SQLiteOper.shared;
         //op.sample()
     }
 
@@ -61,12 +61,14 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
             cell?.lbTitle.text = "标题"
             cell?.lbContent.text = "为事件起个名字"
+            tvEventTitle = cell?.lbContent
             return cell!
             
         }else if indexPath.row == 1 {
             let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
             cell?.lbTitle.text = "内容"
             cell?.lbContent.text = "写下你要做的事情"
+            tvEventContent = cell?.lbContent
             return cell!
             
         }else {
@@ -117,6 +119,17 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     }
     
     func rightBtnPress(_ sender:AnyObject?) -> Void {
+        //gather data
+        let msg = TMessage()
+        msg.title = tvEventTitle?.text
+        msg.desc = tvEventContent?.text
+        msg.type = eventType
+        msg.expire = 10000
+        
+        //save to db
+        let op = SQLiteOper.shared;
+        op.insertItem(item: msg)
+        
         self.dismiss(animated: true, completion: nil)
     }
     
