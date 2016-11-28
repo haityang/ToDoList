@@ -236,7 +236,6 @@
 		B47A7E551DCA17A80044B09B /* mobile-visual-search-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D7F1DCA17A80044B09B /* mobile-visual-search-white@2x.png */; };
 		B47A7E561DCA17A80044B09B /* mobile-visual-search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D801DCA17A80044B09B /* mobile-visual-search@2x.png */; };
 		B47A7E571DCA17A80044B09B /* mobile-visual-youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A7D811DCA17A80044B09B /* mobile-visual-youtube@2x.png */; };
-		B48509291DE14AA600FE7AC0 /* TodoList.db in Resources */ = {isa = PBXBuildFile; fileRef = B48509281DE14AA600FE7AC0 /* TodoList.db */; };
 		B485092C1DE1809500FE7AC0 /* TLEventTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485092A1DE1809500FE7AC0 /* TLEventTypeController.swift */; };
 		B485092D1DE1809500FE7AC0 /* TLEventTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B485092B1DE1809500FE7AC0 /* TLEventTypeController.xib */; };
 		B48509301DE1820300FE7AC0 /* TLEventTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B485092E1DE1820300FE7AC0 /* TLEventTypeCell.swift */; };
@@ -492,7 +491,6 @@
 		B47A7D7F1DCA17A80044B09B /* mobile-visual-search-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-search-white@2x.png"; sourceTree = "<group>"; };
 		B47A7D801DCA17A80044B09B /* mobile-visual-search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-search@2x.png"; sourceTree = "<group>"; };
 		B47A7D811DCA17A80044B09B /* mobile-visual-youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-visual-youtube@2x.png"; sourceTree = "<group>"; };
-		B48509281DE14AA600FE7AC0 /* TodoList.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = TodoList.db; sourceTree = "<group>"; };
 		B485092A1DE1809500FE7AC0 /* TLEventTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLEventTypeController.swift; sourceTree = "<group>"; };
 		B485092B1DE1809500FE7AC0 /* TLEventTypeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLEventTypeController.xib; sourceTree = "<group>"; };
 		B485092E1DE1820300FE7AC0 /* TLEventTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLEventTypeCell.swift; sourceTree = "<group>"; };
@@ -894,19 +892,10 @@
 			path = Sender;
 			sourceTree = "<group>";
 		};
-		B48509271DE14A7900FE7AC0 /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				B48509281DE14AA600FE7AC0 /* TodoList.db */,
-			);
-			path = Configs;
-			sourceTree = "<group>";
-		};
 		B4CEA4801C819F3E0098FF6E = {
 			isa = PBXGroup;
 			children = (
 				B45DC7E11C86CCCF00AE1087 /* UI */,
-				B48509271DE14A7900FE7AC0 /* Configs */,
 				B41969B91DC9E61500160286 /* Images */,
 				B4CEA48B1C819F3E0098FF6E /* todolist */,
 				B4CEA48A1C819F3E0098FF6E /* Products */,
@@ -998,7 +987,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B47A7E521DCA17A80044B09B /* mobile-unpack-explore-arrow@2x.png in Resources */,
-				B48509291DE14AA600FE7AC0 /* TodoList.db in Resources */,
 				B47A7E401DCA17A80044B09B /* mobile-selector-ecollection-black@2x.png in Resources */,
 				B47A7E331DCA17A80044B09B /* mobile-rate@2x.png in Resources */,
 				B47A7DCB1DCA17A80044B09B /* mobile-icon-toolbar-email-black@2x.png in Resources */,

@@ -9,7 +9,7 @@
 import Foundation
 
 let DB_NAME = "TodoList.db"
-let TABLE_EVENT = "events"
+let TABLE_EVENT = "Events"
 
 class SQLiteOper {
     var sqlDB:SQLiteConnect?
@@ -20,6 +20,7 @@ class SQLiteOper {
         let sqlitePath = urls[urls.count-1].absoluteString + DB_NAME
         
         sqlDB = SQLiteConnect(path: sqlitePath)
+        self.createEvenTable()
     }
     
     //singleton
@@ -52,11 +53,19 @@ class SQLiteOper {
         let _ = sqlDB?.delete("students", cond: "id = 5")
     }
 
-    
+    //创建事件表
+    func createEvenTable() {
+        let _ = sqlDB?.createTable(TABLE_EVENT, columnsInfo: [
+            "idx integer primary key autoincrement",
+            "title text",
+            "desc text",
+            "type integer",
+            "expire double"])
+    }
     
     //新增一项事件
     func insertItem(item:TMessage) -> Void {
-        let _ = sqlDB?.insert(TABLE_EVENT, rowInfo: ["title":item.title!, "desc":String(item.desc!), "type":String(describing: item.type), "expire":String(item.expire)]);
+        let _ = sqlDB?.insert(TABLE_EVENT, rowInfo: ["title": "'\(item.title!)'", "desc":"\""+(item.desc!)+"\"", "type":String(describing: item.type.rawValue), "expire":String(item.expire)]);
     }
     
     //删除一项事件
