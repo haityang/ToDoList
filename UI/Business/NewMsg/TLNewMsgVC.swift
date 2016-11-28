@@ -61,6 +61,8 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
             cell?.lbTitle.text = "标题"
             cell?.lbContent.text = "为事件起个名字"
+            cell?.placeHolder = "为事件起个名字"
+            cell?.placeColor = UIColor.init(colorLiteralRed: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
             tvEventTitle = cell?.lbContent
             return cell!
             
@@ -68,6 +70,8 @@ class TLNewMsgVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             let cell: TLNewMsgCell? = tableView.dequeueReusableCell(withIdentifier: "TLNewMsgCell") as! TLNewMsgCell?
             cell?.lbTitle.text = "内容"
             cell?.lbContent.text = "写下你要做的事情"
+            cell?.placeHolder = "写下你要做的事情"
+            cell?.placeColor = UIColor.init(colorLiteralRed: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
             tvEventContent = cell?.lbContent
             return cell!
             
